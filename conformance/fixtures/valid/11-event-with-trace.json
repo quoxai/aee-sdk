@@ -1,0 +1,22 @@
+{
+  "description": "Event with a trace context object",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2J",
+    "ts": "2025-12-14T03:52:00Z",
+    "type": "event",
+    "from": "agent.metrics",
+    "to": "system",
+    "intent": "obs.metric.report",
+    "corr": "01JFB2QX0K8X5K6ZJ9G2C0C1N4",
+    "reply_to": null,
+    "priority": "low",
+    "trace": {
+      "trace_id": "abc123",
+      "span_id": "def456"
+    },
+    "payload": {
+      "cpu": 23.4
+    }
+  }
+}

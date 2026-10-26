@@ -1,0 +1,19 @@
+{
+  "description": "Standalone error whose reply_to falls back to its own id (qluster resolution)",
+  "_comment": "EDGE CASE, NOT the norm. A well-threaded error replies to its predecessor's id. This fixture exercises the last-resort own-id fallback used ONLY for an orphan result/error that has no predecessor: reply_to equals the envelope's OWN id so it stays schema-valid (result/error MUST have a non-null reply_to). The SDK now emits an onError/on_error warning whenever this fallback fires, so it is never silent. Named explicitly so nobody mistakes self-referential reply_to for correct threading.",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2K",
+    "ts": "2025-12-14T03:53:00Z",
+    "type": "error",
+    "from": "human.operator",
+    "to": "box.abc",
+    "intent": "ops.backup.refused",
+    "corr": "01JFB2QX0K8X5K6ZJ9G2C0C1N5",
+    "reply_to": "01JFB2R1JZKQ9V3K8W8Y9W1F2K",
+    "priority": "normal",
+    "payload": {
+      "reason": "org_not_allowed"
+    }
+  }
+}

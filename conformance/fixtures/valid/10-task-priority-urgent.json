@@ -1,0 +1,18 @@
+{
+  "description": "Task with urgent priority",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2H",
+    "ts": "2025-12-14T03:51:00Z",
+    "type": "task",
+    "from": "service.billing",
+    "to": "agent.ops",
+    "intent": "ops.incident.raise",
+    "corr": "01JFB2QX0K8X5K6ZJ9G2C0C1N3",
+    "reply_to": null,
+    "priority": "urgent",
+    "payload": {
+      "severity": 1
+    }
+  }
+}

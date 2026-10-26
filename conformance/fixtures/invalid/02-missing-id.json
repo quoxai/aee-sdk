@@ -1,0 +1,16 @@
+{
+  "description": "MUST have id (§3 rule 1)",
+  "violates": "MUST have id (§3 rule 1)",
+  "envelope": {
+    "v": "1",
+    "ts": "2025-12-14T03:45:12Z",
+    "type": "task",
+    "from": "agent.a",
+    "to": "agent.b",
+    "intent": "ops.ping.check",
+    "corr": "CONV_01JFB2QX0K8X5K6ZJ9G2C0C1MW",
+    "reply_to": null,
+    "priority": "normal",
+    "payload": {}
+  }
+}

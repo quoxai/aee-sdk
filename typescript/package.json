@@ -1,0 +1,60 @@
+{
+  "name": "@quox/aee-sdk",
+  "version": "0.1.0",
+  "description": "Framework-agnostic capture SDK for the AEE protocol (Agent Envelope Exchange). Zero-dependency core: envelope create/validate, decision evidence, pluggable sinks, capture layer.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "aee-validate": "./dist/cjs/bin/aee-validate.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs && node scripts/fixup-dual-build.mjs",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "aee",
+    "agent",
+    "envelope",
+    "audit",
+    "evidence",
+    "observability",
+    "quox"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quoxai/aee-sdk",
+    "directory": "typescript"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}

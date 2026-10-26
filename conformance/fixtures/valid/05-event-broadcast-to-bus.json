@@ -1,0 +1,18 @@
+{
+  "description": "Event broadcast to a bus channel, reply_to null",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2C",
+    "ts": "2025-12-14T03:46:00Z",
+    "type": "event",
+    "from": "agent.monitor.pve",
+    "to": "bus.ops",
+    "intent": "ops.node.transition",
+    "corr": "01JFB2QX0K8X5K6ZJ9G2C0C1MY",
+    "reply_to": null,
+    "priority": "low",
+    "payload": {
+      "status": "online"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "description": "Unknown/extension top-level field preserved (aee.md §3 rule 5 / §7)",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2G",
+    "ts": "2025-12-14T03:50:00Z",
+    "type": "task",
+    "from": "agent.a",
+    "to": "agent.b",
+    "intent": "ops.thing.do",
+    "corr": "01JFB2QX0K8X5K6ZJ9G2C0C1N2",
+    "reply_to": null,
+    "priority": "normal",
+    "payload": {},
+    "x_vendor_field": {
+      "anything": true
+    }
+  }
+}

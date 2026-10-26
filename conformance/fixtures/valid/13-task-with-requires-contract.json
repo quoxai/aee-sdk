@@ -1,0 +1,22 @@
+{
+  "description": "Task with a requires contract (timeout + approval)",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2L",
+    "ts": "2025-12-14T03:54:00Z",
+    "type": "task",
+    "from": "agent.router",
+    "to": "agent.deployer",
+    "intent": "infra.deploy.apply",
+    "corr": "01JFB2QX0K8X5K6ZJ9G2C0C1N6",
+    "reply_to": null,
+    "priority": "high",
+    "requires": {
+      "timeout_ms": 60000,
+      "human_approval": true
+    },
+    "payload": {
+      "target": "prod"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "description": "reply_to MUST be non-null for result (§3 rule 3)",
+  "violates": "reply_to MUST be non-null for result (§3 rule 3)",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2A",
+    "ts": "2025-12-14T03:45:12Z",
+    "type": "result",
+    "from": "agent.a",
+    "to": "agent.b",
+    "intent": "ops.ping.check",
+    "corr": "CONV_01JFB2QX0K8X5K6ZJ9G2C0C1MW",
+    "reply_to": null,
+    "priority": "normal",
+    "payload": {}
+  }
+}

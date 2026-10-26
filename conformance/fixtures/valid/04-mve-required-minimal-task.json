@@ -1,0 +1,16 @@
+{
+  "description": "MVE-Required minimal task: exactly the 10 required fields + reply_to null",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2B",
+    "ts": "2025-12-14T03:45:12Z",
+    "type": "task",
+    "from": "agent.a",
+    "to": "agent.b",
+    "intent": "ops.ping.check",
+    "corr": "CONV_01JFB2QX0K8X5K6ZJ9G2C0C1MX",
+    "reply_to": null,
+    "priority": "normal",
+    "payload": {}
+  }
+}

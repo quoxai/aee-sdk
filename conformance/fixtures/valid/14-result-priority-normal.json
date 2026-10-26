@@ -1,0 +1,23 @@
+{
+  "description": "Result with normal priority and a signature object",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2M",
+    "ts": "2025-12-14T03:55:00Z",
+    "type": "result",
+    "from": "agent.deployer",
+    "to": "agent.router",
+    "intent": "infra.deploy.apply",
+    "corr": "01JFB2QX0K8X5K6ZJ9G2C0C1N6",
+    "reply_to": "01JFB2R1JZKQ9V3K8W8Y9W1F2L",
+    "priority": "normal",
+    "sig": {
+      "alg": "ed25519",
+      "kid": "key-2",
+      "value": "abc"
+    },
+    "payload": {
+      "applied": true
+    }
+  }
+}

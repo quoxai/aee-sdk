@@ -1,0 +1,19 @@
+{
+  "description": "Stream envelope carrying a progress chunk, reply_to set to task id",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2E",
+    "ts": "2025-12-14T03:48:00Z",
+    "type": "stream",
+    "from": "agent.worker",
+    "to": "human.adam",
+    "intent": "ops.backup.progress",
+    "corr": "01JFB2QX0K8X5K6ZJ9G2C0C1N0",
+    "reply_to": "01JFB2R1JZKQ9V3K8W8Y9W1F2D",
+    "priority": "normal",
+    "payload": {
+      "bytes": 1024,
+      "done": false
+    }
+  }
+}

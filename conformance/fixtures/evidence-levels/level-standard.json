@@ -1,0 +1,36 @@
+{
+  "name": "level-standard.json",
+  "description": "level standard yields all fields except context_refs",
+  "level": "standard",
+  "input": {
+    "inputs_used": [
+      "backup-host-01 job log",
+      "compute-node-02 health check"
+    ],
+    "context_refs": [
+      "store://envelopes/01JFB2R1JZKQ9V3K8W8Y9W1F2A"
+    ],
+    "tools_used": [
+      "ssh.exec",
+      "pbs.job.list"
+    ],
+    "decision": "Classified as PARTIAL_FAILURE due to 1/3 nodes unreachable",
+    "reason_summary": "compute-node-02 refused connection on port 8443. Threshold for FAILURE is 2+ nodes.",
+    "action_taken": "Returned status with failed node details for operator review",
+    "confidence": 0.92
+  },
+  "expected": {
+    "inputs_used": [
+      "backup-host-01 job log",
+      "compute-node-02 health check"
+    ],
+    "tools_used": [
+      "ssh.exec",
+      "pbs.job.list"
+    ],
+    "decision": "Classified as PARTIAL_FAILURE due to 1/3 nodes unreachable",
+    "reason_summary": "compute-node-02 refused connection on port 8443. Threshold for FAILURE is 2+ nodes.",
+    "action_taken": "Returned status with failed node details for operator review",
+    "confidence": 0.92
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Event using payload.references wrap-by-reference (aee.md §12)",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2N",
+    "ts": "2025-12-14T03:56:00Z",
+    "type": "event",
+    "from": "agent.archivist",
+    "to": "system",
+    "intent": "audit.snapshot.record",
+    "corr": "01JFB2QX0K8X5K6ZJ9G2C0C1N7",
+    "reply_to": null,
+    "priority": "low",
+    "payload": {
+      "references": [
+        {
+          "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2A",
+          "type": "aee.envelope",
+          "locator": "store://envelopes/01JFB2R1JZKQ9V3K8W8Y9W1F2A"
+        }
+      ]
+    }
+  }
+}

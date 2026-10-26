@@ -1,0 +1,29 @@
+{
+  "description": "aee.md §4.1 Task sample (verbatim)",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2A",
+    "ts": "2025-12-14T03:45:12Z",
+    "type": "task",
+    "from": "agent.manager",
+    "to": "agent.backup_auditor",
+    "intent": "ops.backup.status.check",
+    "corr": "01JFB2QX0K8X5K6ZJ9G2C0C1MW",
+    "reply_to": null,
+    "trace": {
+      "trace_id": "9f3c",
+      "span_id": "a12b"
+    },
+    "priority": "high",
+    "requires": {
+      "timeout_ms": 30000,
+      "evidence": true,
+      "human_approval": false
+    },
+    "payload": {
+      "cluster": "node.lan",
+      "window": "24h"
+    },
+    "sig": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "description": "MUST have corr (§3 rule 1)",
+  "violates": "MUST have corr (§3 rule 1)",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2A",
+    "ts": "2025-12-14T03:45:12Z",
+    "type": "task",
+    "from": "agent.a",
+    "to": "agent.b",
+    "intent": "ops.ping.check",
+    "reply_to": null,
+    "priority": "normal",
+    "payload": {}
+  }
+}

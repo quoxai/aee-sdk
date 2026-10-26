@@ -1,0 +1,17 @@
+{
+  "description": "to MUST be non-empty (schema minLength 1)",
+  "violates": "to MUST be non-empty (schema minLength 1)",
+  "envelope": {
+    "v": "1",
+    "id": "01JFB2R1JZKQ9V3K8W8Y9W1F2A",
+    "ts": "2025-12-14T03:45:12Z",
+    "type": "task",
+    "from": "agent.a",
+    "to": "",
+    "intent": "ops.ping.check",
+    "corr": "CONV_01JFB2QX0K8X5K6ZJ9G2C0C1MW",
+    "reply_to": null,
+    "priority": "normal",
+    "payload": {}
+  }
+}

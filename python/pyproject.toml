@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "quox-aee"
+version = "0.1.0"
+description = "Framework-agnostic capture SDK for the AEE protocol (Agent Envelope Exchange). Zero-dependency core: envelope create/validate, decision evidence, pluggable sinks, capture layer."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Quox" }]
+keywords = ["aee", "agents", "envelope", "audit", "evidence", "observability"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov>=4.0"]
+
+[project.urls]
+Homepage = "https://quox.ai"
+Repository = "https://github.com/quoxai/aee-sdk"
+Protocol = "https://github.com/quoxai/aee"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/quox_aee"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["quox_aee"]
+
+[tool.coverage.report]
+show_missing = true
